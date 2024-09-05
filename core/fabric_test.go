@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/danielmiessler/fabric/db"
+	"github.com/d-marke/fabric/db"
 )
 
 func TestNewFabric(t *testing.T) {
