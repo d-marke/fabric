@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/danielmiessler/fabric/common"
+	"github.com/d-marke/fabric/common"
 	"github.com/stretchr/testify/assert"
 )
 
