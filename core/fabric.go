@@ -60,7 +60,7 @@ func NewFabricBase(db *db.Db) (ret *Fabric) {
 		"Enter the index the name of your default model")
 
 	ret.VendorsAll.AddVendors(openai.NewClient(), azure.NewClient(), ollama.NewClient(), groc.NewClient(),
-		gemini.NewClient(), anthropic.NewClient())
+		gemini.NewClient(), anthropic.NewClient(), openrouter.NewClient())
 
 	return
 }
