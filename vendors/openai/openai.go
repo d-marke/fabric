@@ -6,14 +6,14 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/danielmiessler/fabric/common"
+	"github.com/d-marke/fabric/common"
 	"github.com/samber/lo"
 	"github.com/sashabaranov/go-openai"
 	goopenai "github.com/sashabaranov/go-openai"
 )
 
 func NewClient() (ret *Client) {
-	return NewClientCompatible("OpenAI", "https://api.openai.com/v1", nil)
+	return NewClientCompatible("OpenAI", "https://openrouter.ai/api/v1", nil)
 }
 
 func NewClientCompatible(vendorName string, defaultBaseUrl string, configureCustom func() error) (ret *Client) {
@@ -30,7 +30,7 @@ func NewClientCompatible(vendorName string, defaultBaseUrl string, configureCust
 	}
 
 	ret.ApiKey = ret.AddSetupQuestion("API Key", true)
-	ret.ApiBaseURL = ret.AddSetupQuestion("API Base URL", false)
+	ret.ApiBaseURL = ret.AddSetupQuestion("API Base URL", true)
 	ret.ApiBaseURL.Value = defaultBaseUrl
 
 	return
