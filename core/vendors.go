@@ -3,7 +3,7 @@ package core
 import (
 	"context"
 	"fmt"
-	"github.com/danielmiessler/fabric/vendors"
+	"github.com/d-marke/fabric/vendors"
 	"sync"
 )
 
