@@ -3,7 +3,7 @@ package db
 import (
 	"testing"
 
-	"github.com/danielmiessler/fabric/common"
+	"github.com/d-marke/fabric/common"
 )
 
 func TestSessions_GetOrCreateSession(t *testing.T) {
