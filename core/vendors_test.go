@@ -5,7 +5,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/danielmiessler/fabric/common"
+	"github.com/d-marke/fabric/common"
 )
 
 func TestNewVendorsManager(t *testing.T) {
