@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/danielmiessler/fabric/cli"
+	"github.com/d-marke/fabric/cli"
 )
 
 func main() {
