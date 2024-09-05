@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/danielmiessler/fabric/common"
-	"github.com/danielmiessler/fabric/db"
-	"github.com/danielmiessler/fabric/vendors"
+	"github.com/d-marke/fabric/common"
+	"github.com/d-marke/fabric/db"
+	"github.com/d-marke/fabric/vendors"
 )
 
 type Chatter struct {
